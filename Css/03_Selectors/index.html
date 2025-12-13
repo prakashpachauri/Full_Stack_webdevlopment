@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Selector Examples</title>
+    <style>
+      /* 1. Universal Selector */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* 2. Type Selector */
+      p {
+        color: blue;
+        font-size: 16px;
+      }
+
+      /* 3. Class Selector */
+      .highlight {
+        background-color: yellow;
+      }
+
+      /* 4. ID Selector */
+      #main-title {
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      /* 5. Attribute Selector */
+      a[target="_blank"] {
+        color: red;
+      }
+
+      /* 6. Descendant Selector */
+      div p {
+        margin-bottom: 10px;
+      }
+
+      /* 7. Child Selector */
+      ul > li {
+        list-style-type: square;
+      }
+
+      /* 8. Adjacent Sibling Selector */
+      h2 + p {
+        font-style: italic;
+      }
+
+      /* 9. General Sibling Selector */
+      h3 ~ p {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">This is header</header>
+  </body>
+</html>
