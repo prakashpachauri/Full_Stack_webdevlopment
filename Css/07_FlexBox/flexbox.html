@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox tutorial</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 20px;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        background-color: #f4f4f4;
+        margin: 15px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 2px solid#0c0c0c;
+      }
+      h1,
+      h2 {
+        color: #404040;
+      }
+
+      .flex-container {
+        display: flex;
+        margin-bottom: 20px;
+        /* padding: 10px; */
+        height: 200px;
+      }
+
+      .circle {
+        display: flex;
+        font-size: large;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        padding: 8px;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: bolder;
+
+        /* display: block; */
+      }
+
+      .paster-1 {
+        background-color: #e41d1d;
+      }
+      .paster-2 {
+        background-color: #e4e11d;
+      }
+      .paster-3 {
+        background-color: #1de487;
+      }
+      .paster-4 {
+        background-color: #e41d1d;
+      }
+      .paster-5 {
+        background-color: #5a7e53;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Flex box Master Class</h1>
+    <div class="container">
+      <h1>1.Default flexbox(row)</h1>
+      <div class="flex-container">
+        <div class="circle paster-1">1</div>
+        <div class="circle paster-2">2</div>
+        <div class="circle paster-3">3</div>
+        <div class="circle paster-4">4</div>
+        <div class="circle paster-5">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>2. Flex direction : column</h1>
+      <div class="flex-container" style="flex-direction: column">
+        <div class="circle paster-1">1</div>
+        <div class="circle paster-2">2</div>
+        <div class="circle paster-3">3</div>
+        <div class="circle paster-4">4</div>
+        <div class="circle paster-5">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>3. justify-content:space-between</h1>
+      <div class="flex-container" style="justify-content: start">
+        <div class="circle paster-1">1</div>
+        <div class="circle paster-2">2</div>
+        <div class="circle paster-3">3</div>
+        <div class="circle paster-4">4</div>
+        <div class="circle paster-5">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>4.align-items:center</h1>
+      <div class="flex-container" style="align-items: last baseline" ;>
+        <div class="circle paster-1">1</div>
+        <div class="circle paster-2">2</div>
+        <div class="circle paster-3">3</div>
+        <div class="circle paster-4">4</div>
+        <div class="circle paster-5">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>5.flex wrap:wrap</h1>
+      <div class="flex-container" style="flex-wrap: wrap">
+        <div class="circle paster-1">1</div>
+        <div class="circle paster-2">2</div>
+        <div class="circle paster-3">3</div>
+        <div class="circle paster-4">4</div>
+        <div class="circle paster-5">5</div>
+        <div class="circle paster-1">6</div>
+        <div class="circle paster-2">7</div>
+        <div class="circle paster-3">8</div>
+        <div class="circle paster-4">9</div>
+        <div class="circle paster-5">10</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>6.align-content:space-around with Wrap</h1>
+      <div
+        class="flex-container"
+        style="flex-wrap: wrap; align-content: space-around"
+      >
+        <div class="circle paster-1">1</div>
+        <div class="circle paster-2">2</div>
+        <div class="circle paster-3">3</div>
+        <div class="circle paster-4">4</div>
+        <div class="circle paster-5">5</div>
+        <div class="circle paster-1">6</div>
+        <div class="circle paster-2">7</div>
+        <div class="circle paster-3">8</div>
+        <div class="circle paster-4">9</div>
+        <div class="circle paster-5">10</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>7. Order Property</h1>
+      <div class="flex-container">
+        <div class="circle paster-1" style="order: 1">1</div>
+        <div class="circle paster-2" style="order: 3">2</div>
+        <div class="circle paster-3" style="order: 5">3</div>
+        <div class="circle paster-4" style="order: 2">4</div>
+        <div class="circle paster-5" style="order: 4">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>8.Flex Grow</h1>
+      <div class="flex-container">
+        <div class="circle paster-1" style="flex-grow: 10" ;>1</div>
+        <div class="circle paster-2" style="flex-grow: 5" ;>2</div>
+        <div class="circle paster-3" style="flex-grow: 2" ;>3</div>
+        <div class="circle paster-4" style="flex-grow: 4" ;>4</div>
+        <div class="circle paster-5" style="flex-grow: 3" ;>5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>9. align self</h1>
+      <div class="flex-container">
+        <div class="circle paster-1" style="align-self: flex-start">1</div>
+        <div class="circle paster-2" style="align-self: center">2</div>
+        <div class="circle paster-3" style="align-self: flex-end">3</div>
+        <div class="circle paster-4" style="align-self: stretch; height: auto">
+          4
+        </div>
+        <div class="circle paster-5" style="align-self: flex-start">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>prakash</h1>
+      <div class="flex-container">
+        <div class="circle paster-1">1</div>
+        <div class="circle paster-2">2</div>
+        <div class="circle paster-3">3</div>
+        <div class="circle paster-4">4</div>
+        <div class="circle paster-5">5</div>
+      </div>
+    </div>
+  </body>
+</html>
