@@ -1,108 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>forms in html</title>
     <style>
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* height: 100vh; */
-            background-color: #213141;
-        }
-        h1{
-            color: white;
-            align-items: center;
-        }   
+      body{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          /* height: 100vh; */
+          background-color: #213141;
+      }
+      h1{
+          color: white;
+          align-items: center;
+      }
 
-        .first{
-            border: 2px solid white;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 10px;
-            background-color: #5b5b5b;
-        }
+      .first{
+          border: 2px solid white;
+          padding: 20px;
+          margin: 10px;
+          border-radius: 10px;
+          background-color: #5b5b5b;
+      }
 
-         .second{
-            border: 2px solid white;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 10px;
-            /* background-color: #2d0000; */
-            color: white;
-            drop-shadow(10px 10px 10px rgb(90, 36, 36));
-            
-        }
+       .second{
+          border: 2px solid white;
+          padding: 20px;
+          margin: 10px;
+          border-radius: 10px;
+          /* background-color: #2d0000; */
+          color: white;
+          drop-shadow(10px 10px 10px rgb(90, 36, 36));
+
+      }
     </style>
-</head>
-<body>
-    <h1> Login Form in html</h1><br>
+  </head>
+  <body>
+    <h1>Login Form in html</h1>
+    <br />
     <div class="first">
-        <form action="input">
-            <label for="email">
-                email: <input placeholder="Enter your e-mail.id"ptype="text" id="email" name="email">
-            </label><br>
-            <label for="password">
-                password: <input placeholder="Password" type="text" id="password" name="password">
-            </label><br>
+      <form action="input">
+        <label for="email">
+          email:
+          <input
+            placeholder="Enter your e-mail.id"
+            ptype="text"
+            id="email"
+            name="email"
+          /> </label
+        ><br />
+        <label for="password">
+          password:
+          <input
+            placeholder="Password"
+            type="text"
+            id="password"
+            name="password"
+          /> </label
+        ><br />
 
-            <input type="submit" value="submit">
-            <input type="reset" value="reset">
-
-
-
-        </form>
-    </div><br>
+        <input type="submit" value="submit" />
+        <input type="reset" value="reset" />
+      </form>
+    </div>
+    <br />
 
     <h1>Learning Tag in form html</h1>
     <div class="second">
-        <form action="input">
-            <label for="Email">
-                Email: <input type="email" name="Email" id="Email">
-            </label><br>
+      <form action="input">
+        <label for="Email">
+          Email: <input type="email" name="Email" id="Email" /> </label
+        ><br />
 
-            <label for="Password">
-                Password: <input type="password" name="Password" id="Password">
-            </label><br>
+        <label for="Password">
+          Password:
+          <input type="password" name="Password" id="Password" /> </label
+        ><br />
 
-            <label for="Games">Games</label><br>
-            <label for="Basketboll">
-                Basketboll: <input type="checkbox" name="Basketboll" id="Basketboll">
-            </label>
-            <label for="Badminton">
-                Badminton: <input type="checkbox" name="Badminton" id="Badminton">
-            </label><br>
-            <label for="photo">
-                Upload your photo: <input type="file" name="photo" id="photo">
-            </label><br>
-            <label for="select">Which desination you want:
-                <select name="select" id="select">
-                    <option value="select">--select--</option>
-                  <option value="javadevloper">javadevloper frontend & backend</option>
-                  <option value="android development">UI and UX with java</option>
-                  <option value="android development">Website Devlopement with Mern Stack</option>
-                    <option value="python">Python with AI and ML</option>
-                    <option value="data science">Data Science</option>
-                    <option value="data analysis">Data Analysis</option>
+        <label for="Games">Games</label><br />
+        <label for="Basketboll">
+          Basketboll:
+          <input type="checkbox" name="Basketboll" id="Basketboll" />
+        </label>
+        <label for="Badminton">
+          Badminton:
+          <input type="checkbox" name="Badminton" id="Badminton" /> </label
+        ><br />
+        <label for="photo">
+          Upload your photo:
+          <input type="file" name="photo" id="photo" /> </label
+        ><br />
+        <label for="select"
+          >Which desination you want:
+          <select name="select" id="select">
+            <option value="select">--select--</option>
+            <option value="javadevloper">
+              javadevloper frontend & backend
+            </option>
+            <option value="android development">UI and UX with java</option>
+            <option value="android development">
+              Website Devlopement with Mern Stack
+            </option>
+            <option value="python">Python with AI and ML</option>
+            <option value="data science">Data Science</option>
+            <option value="data analysis">Data Analysis</option>
 
-                    <option value="web3.0">Web3.0 and Metaverse</option>
-                    <option value="blockchain">Blockchain</option>
-                    <option value="cyber security">Cyber Security</option>
-                    <option value="cloud computing">Cloud Computing</option>
+            <option value="web3.0">Web3.0 and Metaverse</option>
+            <option value="blockchain">Blockchain</option>
+            <option value="cyber security">Cyber Security</option>
+            <option value="cloud computing">Cloud Computing</option>
 
-                    <option value="digital marketing">Digital Marketing</option>
-                    <option value="graphic design">Graphic Design</option>
-                </select>
-            </label><br>
+            <option value="digital marketing">Digital Marketing</option>
+            <option value="graphic design">Graphic Design</option>
+          </select> </label
+        ><br />
 
-            submit: <input type="submit" value="submit">
-            reset: <input type="reset" value="reset">
-            <br>
-        </form>
+        submit: <input type="submit" value="submit" /> reset:
+        <input type="reset" value="reset" />
+        <br />
+      </form>
     </div>
-
-    
-</body>
+  </body>
 </html>
