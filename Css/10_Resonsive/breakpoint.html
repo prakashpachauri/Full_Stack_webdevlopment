@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .resonsive-content {
+        padding: 20px;
+        font-size: 1.5rem;
+        text-align: center;
+        border-radius: 10px;
+      }
+      @media (max-width: 600px) {
+        body {
+          background-color: lightgray;
+          align-items: flex-start;
+        }
+        .resonsive-content {
+          background-color: rgb(88, 25, 105);
+          color: black;
+        }
+      }
+      @media (min-width: 601px) and (max-width: 900px) {
+        .resonsive-content {
+          background-color: rgb(25, 88, 105);
+          color: white;
+        }
+      }
+      @media (min-width: 901px) {
+        .resonsive-content {
+          background-color: rgb(37, 105, 25);
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resonsive-content">
+      This div changes the color on the based of the screensize.
+    </div>
+  </body>
+</html>
